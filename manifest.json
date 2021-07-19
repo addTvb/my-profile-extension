@@ -1,0 +1,9 @@
+{
+    "name": "Abayev Arslan Portfolio",
+    "description": "The Abayev Arslan(addTvb) portfolio and profile extension👨‍💻",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
