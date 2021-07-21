@@ -22,7 +22,7 @@ After cloning the repository, open your Chrome browser and type `chrome://extens
 -   Turn on developer mode in the upper right corner
 -   And upload project folder
     <img href="https://i.postimg.cc/SKVcbfRP/dev-mode-turn-on.png" alt="Uploading extension" />
-
+ 
 ### Result
 
 And now you can see the result!
