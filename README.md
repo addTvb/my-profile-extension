@@ -21,10 +21,10 @@ After cloning the repository, open your Chrome browser and type `chrome://extens
 
 -   Turn on developer mode in the upper right corner
 -   And upload project folder
-    <img href="https://i.postimg.cc/SKVcbfRP/dev-mode-turn-on.png" alt="Uploading extension" />
- 
+    ![Uploading extension](https://i.postimg.cc/SKVcbfRP/dev-mode-turn-on.png)
+
 ### Result
 
 And now you can see the result!
 <br>
-<img href="https://i.postimg.cc/gJJ8zL62/result.png" alt="The extension works" />
+![The extension works](https://i.postimg.cc/gJJ8zL62/result.png)
