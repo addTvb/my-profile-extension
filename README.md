@@ -5,7 +5,7 @@ Chrome extension for my profile and portfolio,
 
 ## Installation
 
-### Clone reposittory
+### Clone repository
 
 At the first clone the repository
 
