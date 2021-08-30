@@ -11,7 +11,7 @@ hr {
 .vertical-rule {
     border: none;
     border-left: 1px solid #ccc;
-    height: 100vh;
+    height: 100%;
     width: 1px;
 }
 /* * LINK */
