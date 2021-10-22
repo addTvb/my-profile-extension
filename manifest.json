@@ -10,5 +10,11 @@
         "16": "img/icons/icon16.png",
         "48": "img/icons/icon48.png",
         "128": "img/icons/icon128.png"
-    }
+    },
+    "permissions": [
+        "webNavigation",
+        "storage",
+        "clipboardWrite",
+        "clipboardRead"
+    ]
 }

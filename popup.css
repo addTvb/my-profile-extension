@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #3b525f;
     color: #fff;
+    font-family: sans-serif;
 }
 /* Special selectors */
 hr {
@@ -11,7 +12,6 @@ hr {
 .vertical-rule {
     border: none;
     border-left: 1px solid #ccc;
-    height: 100vh;
     width: 1px;
 }
 /* * LINK */
