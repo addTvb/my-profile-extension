@@ -1,83 +1,131 @@
+:root {
+	--accent-color: #ffac00;
+	--secondary-color: #701598;
+	--deep-grey: #3a3a3a;
+	--tooltip-bg: #616161;
+}
+
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #3b525f;
-    color: #fff;
-    font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: var(--deep-grey);
+	color: #fff;
+	font-family: sans-serif;
 }
 /* Special selectors */
 hr {
-    width: 100%;
+	width: 100%;
 }
 .vertical-rule {
-    border: none;
-    border-left: 1px solid #ccc;
-    width: 1px;
+	border: none;
+	border-left: 1px solid #ccc;
+	width: 1px;
 }
 /* * LINK */
 a {
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
 }
 /* * BUTTON */
 .copy-btn {
-    border: 1px solid #fff;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #2b8599;
-    padding: 0.3rem 0.9rem;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: 0.2s;
+	border: 1px solid var(--accent-color);
+	border-radius: 5px;
+	color: var(--accent-color);
+	background-color: var(--deep-grey);
+	padding: 0.3rem 0.9rem;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: all 0.2s;
+
+	/* tooltip */
+	position: relative;
+	display: inline-block;
 }
-.copy-btn:active {
-    border: 1px solid #2b8599;
-    color: #2b8599;
-    background-color: #fff;
-    transition: 0.2s;
+/* Tooltip text */
+.copy-btn > .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: var(--tooltip-bg);
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+.copy-btn > .tooltiptext::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--tooltip-bg) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.copy-btn:active .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.copy-btn:hover {
+	color: var(--deep-grey);
+	background-color: var(--accent-color);
+	transition: all 0.2s;
 }
 /* ***** */
 .popup {
-    width: 400px;
-    padding: 1rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+	width: 400px;
+	padding: 1rem 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 .popup__title {
-    font-weight: normal;
-    text-align: center;
-    font-size: 1.5rem;
+	font-weight: normal;
+	text-align: center;
+	font-size: 1.5rem;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .section__title {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
+	color: var(--accent-color);
 }
 .section__body {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .section__row {
-    display: flex;
-    align-items: center;
-    padding-bottom: 1rem;
-    column-gap: 1rem;
+	display: flex;
+	align-items: center;
+	padding-bottom: 1rem;
+	column-gap: 1rem;
 }
 .section__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
 }
 .sub-section-wrapper {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }

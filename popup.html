@@ -1,109 +1,163 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="popup.css" />
-    </head>
-    <body>
-        <div class="popup">
-            <h1 class="popup__title">
-                <strong>addTvb&#128400;</strong> welcomes you dear guest, this
-                is an extension of my portfolio, if you like what I do please
-                give me a review&#128172;
-            </h1>
-            <hr />
-            <!-- * SOCIAL MEDIAS -->
-            <section class="section">
-                <h2 class="section__title">Social Medias</h2>
-                <div class="section__body">
-                    <div class="section__row">
-                        <a
-                            class="section__link"
-                            href="https://www.linkedin.com/in/arslan-abayev-addtvb/"
-                            target="_blank"
-                        >
-                            <img src="img/LinkedIn.svg" alt="LinkedIn logo" />
-                            <span>LinkedIn&#128279;</span>
-                        </a>
-                        <div class="vertical-rule"></div>
+	<head>
+		<link rel="stylesheet" href="popup.css" />
+	</head>
+	<body>
+		<div class="popup">
+			<h1 class="popup__title">
+				<strong>addTvb&#128400;</strong> welcomes you dear guest, this is an
+				extension of my portfolio, if you like what I do please give me a
+				review&#128172;
+			</h1>
+			<hr />
+			<!-- * SOCIAL MEDIAS -->
+			<section class="section">
+				<h2 class="section__title">Social Medias</h2>
+				<div class="section__body">
+					<div class="section__row">
+						<a
+							class="section__link"
+							href="https://www.linkedin.com/in/arslan-abayev-addtvb/"
+							target="_blank"
+						>
+							<img src="img/LinkedIn.svg" alt="LinkedIn logo" />
+							<span>LinkedIn&#128279;</span>
+						</a>
+						<div class="vertical-rule"></div>
 
-                        <!--  -->
-                        <input type="text" id="input" value="TEST" />
-                        <button id="button" class="copy-btn">Copy</button>
-                        <!--  -->
-                    </div>
-                    <div class="section__row">
-                        <a
-                            class="section__link"
-                            href="https://career.habr.com/arslan-abaev"
-                            target="_blank"
-                        >
-                            <img src="img/habr.svg" alt="habr logo" />
-                            <span>Habr Career&#129333;</span>
-                        </a>
-                        <div class="vertical-rule"></div>
-                        <button class="copy-btn">Copy</button>
-                    </div>
-                </div>
-            </section>
-            <hr />
-            <!-- * BLOG -->
-            <section class="section">
-                <h2 class="section__title">Blog</h2>
-                <div class="section__body">
-                    <div class="section__row">
-                        <a
-                            class="section__link"
-                            href="https://abayew-arslan.medium.com/"
-                            target="_blank"
-                        >
-                            <img src="img/medium.svg" alt="Medium logo" />
-                            <span>Medium &#128221;</span>
-                        </a>
-                        <div class="vertical-rule"></div>
-                        <button class="copy-btn">Copy</button>
-                    </div>
-                </div>
-            </section>
-            <hr />
-            <!-- * PORTFOLIO -->
-            <section class="section">
-                <h2 class="section__title">Portfolio</h2>
-                <div class="section__body">
-                    <div class="section__row">
-                        <a
-                            class="section__link"
-                            href="https://github.com/addTvb"
-                            target="_blank"
-                        >
-                            <img src="img/git-hub.svg" alt="GitHub logo" />
-                            <span>GitHub &#128187;</span>
-                        </a>
-                        <div class="vertical-rule"></div>
-                        <button class="copy-btn">Copy</button>
-                    </div>
-                </div>
-                <div class="sub-section-wrapper">
-                    <div class="section">
-                        <h2 class="section__title">Deployed projects</h2>
-                        <div class="section__body">
-                            <div class="section__row">
-                                <a
-                                    class="section__link"
-                                    href="https://addtvb.github.io/umutly-teklip"
-                                    target="_blank"
-                                >
-                                    &#9898;
-                                    <span>Landing page for Umyly Teklip </span>
-                                </a>
-                                <div class="vertical-rule"></div>
-                                <button class="copy-btn">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- * clipboard.js -->
-        <script src="./script.js"></script>
-    </body>
+						<button class="copy-btn" id="button-ln">
+							Copy
+							<span class="tooltiptext">Copied!</span>
+						</button>
+					</div>
+					<div class="section__row">
+						<a
+							class="section__link"
+							href="https://career.habr.com/arslan-abaev"
+							target="_blank"
+						>
+							<img src="img/habr.svg" alt="habr logo" />
+							<span>Habr Career&#129333;</span>
+						</a>
+						<div class="vertical-rule"></div>
+						<button class="copy-btn" id="button-habr">
+							Copy
+							<span class="tooltiptext">Copied!</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<hr />
+			<!-- * MEDIUM BLOG -->
+			<section class="section">
+				<h2 class="section__title">Blog</h2>
+				<div class="section__body">
+					<div class="section__row">
+						<a
+							class="section__link"
+							href="https://abayew-arslan.medium.com/"
+							target="_blank"
+						>
+							<img src="img/medium.svg" alt="Medium logo" />
+							<span>Medium &#128221;</span>
+						</a>
+						<div class="vertical-rule"></div>
+						<button class="copy-btn" id="button-medium">
+							Copy
+							<span class="tooltiptext">Copied!</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<div class="section__body">
+				<div class="section__row">
+					<a
+						class="section__link"
+						href="https://addtvb-code-notes.netlify.app/"
+						target="_blank"
+					>
+						<img src="img/blog-sm.svg" alt="My blog logo" />
+						<span>addtvb-code-notes &#128221;</span>
+					</a>
+					<div class="vertical-rule"></div>
+					<button class="copy-btn" id="button-blog">
+						Copy
+						<span class="tooltiptext">Copied!</span>
+					</button>
+				</div>
+			</div>
+			<hr />
+			<!-- * PORTFOLIO -->
+			<section class="section">
+				<h2 class="section__title">Portfolio</h2>
+				<div class="section__body">
+					<div class="section__row">
+						<a
+							class="section__link"
+							href="https://github.com/addTvb"
+							target="_blank"
+						>
+							<img src="img/git-hub.svg" alt="GitHub logo" />
+							<span>GitHub &#128187;</span>
+						</a>
+						<div class="vertical-rule"></div>
+						<button class="copy-btn" id="button-github">
+							Copy
+							<span class="tooltiptext">Copied!</span>
+						</button>
+					</div>
+				</div>
+				<div class="sub-section-wrapper">
+					<div class="section">
+						<h2 class="section__title">Deployed projects</h2>
+						<div class="section__body">
+							<div class="section__row">
+								<a
+									class="section__link"
+									href="https://addtvb.github.io/umutly-teklip"
+									target="_blank"
+								>
+									&#127973;
+									<span>Landing page for Umyly Teklip </span>
+								</a>
+							</div>
+							<div class="section__row">
+								<a
+									class="section__link"
+									href="https://easy-lyrics.netlify.app/"
+									target="_blank"
+								>
+									&#9834;
+									<span>Lyrics App</span>
+								</a>
+							</div>
+							<div class="section__row">
+								<a
+									class="section__link"
+									href="https://addtvb.github.io/js-screen-recorder/"
+									target="_blank"
+								>
+									&#127909;
+									<span>JS Screen Recorder</span>
+								</a>
+							</div>
+							<div class="section__row">
+								<a
+									class="section__link"
+									href="https://threejs-3d-cube.netlify.app/"
+									target="_blank"
+								>
+									&#129482;
+									<span>3D cube made with three.js</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- * copy to clipboard -->
+		<script src="./script.js"></script>
+	</body>
 </html>
